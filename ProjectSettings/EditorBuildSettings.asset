@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Flappi Bord.unity
+    guid: 27f5ca59dfa26ae4c912db88e7cce066
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 4c20766994aaa3e45971185a636e1f7a, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b54ca361b042d1e49bb73385e11ec75e, type: 2}
