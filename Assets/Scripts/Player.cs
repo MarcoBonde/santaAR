@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -12,18 +10,34 @@ public class Player : MonoBehaviour
     public Score scoreText;
     public GameObject ReplayBtn;
 
+    bool shouldGoUp;
+
     void Start()
     {
         Time.timeScale = 1;
         MyRigidBody = GetComponent<Rigidbody2D>();
+        shouldGoUp = false;
+        FaceExpressionManager.Singleton.ShouldFly.AddListener(ShouldFly);
     }
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            MyRigidBody.velocity = Vector2.up * speed;
+            shouldGoUp = true;
         }
+        if (shouldGoUp) {
+            flyUp();
+        }
+    }
+    void ShouldFly()
+    {
+        shouldGoUp = true;
+    }
+    private void flyUp()
+    {
+        MyRigidBody.velocity = Vector2.up * speed;
+        shouldGoUp = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
