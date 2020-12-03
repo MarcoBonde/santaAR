@@ -44,3 +44,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Stelle
+    uniqueID: 1958962593
+    locked: 0
+  - name: BackGround
+    uniqueID: 4228653665
+    locked: 0
+  - name: Pipe
+    uniqueID: 943182185
+    locked: 0
+  - name: Ground
+    uniqueID: 2503334891
+    locked: 0
