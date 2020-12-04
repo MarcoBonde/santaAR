@@ -61,6 +61,7 @@ public class Player : MonoBehaviour
 
     public void ReplayGame()
     {
-        SceneManager.LoadScene(1);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 }
