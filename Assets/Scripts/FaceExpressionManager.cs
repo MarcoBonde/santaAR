@@ -16,6 +16,11 @@ public class FaceExpressionManager : MonoBehaviour
 
     public UnityEvent ShouldFly;
 
+    public GameObject Santagame;
+    public GameObject bottone1;
+    public GameObject Camera1;
+    public GameObject Camera2;
+
     private void OnEnable()
     {
         Singleton = this;
@@ -27,7 +32,12 @@ public class FaceExpressionManager : MonoBehaviour
         if (CurrentFaceInstance != null)
         {
             CurrentFaceInstance.SetStandardFaceData();
+           
         }
+        Santagame.SetActive(true);
+        bottone1.SetActive(false);
+        Camera1.SetActive(false);
+        Camera2.SetActive(true);
     }
 
     public void SetOpenMouthFaceData()
