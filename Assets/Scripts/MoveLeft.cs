@@ -42,12 +42,6 @@ public class MoveLeft : MonoBehaviour
             }
         }
 
-        if (gameObject.CompareTag("bgg"))
-        {
-            if (transform.position.x <= leftLimit)
-            {
-                Destroy(gameObject);
-            }
-        }
+        
     }
 }
