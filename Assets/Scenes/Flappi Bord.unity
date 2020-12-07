@@ -237,6 +237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSanta
       objectReference: {fileID: 0}
+    - target: {fileID: 923285730086846880, guid: 578b9c641e8313049a939f73ceef66ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2878590275483557816, guid: 578b9c641e8313049a939f73ceef66ba, type: 3}
       propertyPath: ReplayBtn
       value: 
@@ -245,6 +249,10 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1611746311}
+    - target: {fileID: 4596793470208079023, guid: 578b9c641e8313049a939f73ceef66ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8194313716841595494, guid: 578b9c641e8313049a939f73ceef66ba, type: 3}
       propertyPath: m_RootOrder
       value: 1
