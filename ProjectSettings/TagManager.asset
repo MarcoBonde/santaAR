@@ -8,6 +8,7 @@ TagManager:
   - Pipe
   - Column
   - SantaGame
+  - bgg
   layers:
   - Default
   - TransparentFX
