@@ -6,8 +6,10 @@ public class MoveLeft : MonoBehaviour
 {
     public float speed;
     float groundLength;
+    float bgLength;
 
     BoxCollider2D groundCollider;
+    SpriteRenderer backgroundRenderer;
 
     public float leftLimit;
 
@@ -17,8 +19,15 @@ public class MoveLeft : MonoBehaviour
         {
             groundCollider = GetComponent<BoxCollider2D>();
             groundLength = groundCollider.size.x;
+           // Debug.Log("gr length: " + groundLength);
         }
-        
+        if (gameObject.CompareTag("bgg"))
+        {
+            backgroundRenderer = GetComponent<SpriteRenderer>();
+            bgLength = backgroundRenderer.size.x;
+           // Debug.Log("bg length: "+bgLength);
+        }
+
     }
 
     
@@ -31,6 +40,13 @@ public class MoveLeft : MonoBehaviour
             if (transform.position.x <= -groundLength)
             {
                 transform.position = new Vector2(transform.position.x + 2 * groundLength, transform.position.y);
+            }
+        }
+        if (gameObject.CompareTag("bgg"))
+        {
+            if (transform.position.x <= -bgLength)
+            {
+                transform.position = new Vector2(transform.position.x + 2 * bgLength, transform.position.y);
             }
         }
 
