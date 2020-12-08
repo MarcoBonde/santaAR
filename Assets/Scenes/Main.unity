@@ -511,6 +511,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2878590275507136989, guid: 578b9c641e8313049a939f73ceef66ba, type: 3}
+      propertyPath: maxY
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2878590275507136989, guid: 578b9c641e8313049a939f73ceef66ba, type: 3}
+      propertyPath: minY
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2878590275507136989, guid: 578b9c641e8313049a939f73ceef66ba, type: 3}
+      propertyPath: maxTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2878590276334554651, guid: 578b9c641e8313049a939f73ceef66ba, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
