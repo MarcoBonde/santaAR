@@ -501,7 +501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 923285730086846880, guid: 578b9c641e8313049a939f73ceef66ba, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1046750764058143318, guid: 578b9c641e8313049a939f73ceef66ba, type: 3}
       propertyPath: leftLimit
